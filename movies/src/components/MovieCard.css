@@ -1,0 +1,54 @@
+/* MovieCard.css */
+.movie-card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movie-card h2 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.movie-card p {
+  font-size: 0.9rem;
+  margin: 25px 0;
+}
+
+.movie-card p.rating {
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for the Delete button */
+.movie-card button {
+  background-color: #ff3b3b; /* Red background color */
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+.movie-card button:hover {
+  background-color: #e60000; /* Darker red on hover */
+}

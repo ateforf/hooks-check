@@ -1,0 +1,67 @@
+/* MovieList.css */
+.movie-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 0 -10px;
+  padding: 20px; /* Add some padding to the container */
+  background-color: #fff; /* Set a light background color */
+}
+
+.movie-card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+  position: relative; /* To position the delete button */
+}
+
+/* Style the Delete button */
+.movie-card .delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff3b3b; /* Red background color */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.movie-card .delete-button:hover {
+  background-color: #e60000; /* Darker red on hover */
+}
+
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movie-card h2 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.movie-card p {
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.movie-card p.rating {
+  font-weight: bold;
+  color: #5e095e;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
